@@ -47,15 +47,15 @@ import sklearn
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Python 3!
+I've used it since I started learning and find it the easiest to use. I can use it with HackerRank as well.
 ### Q2. Which Python Version Installed   
 
 In the Terminal:
 
-`python3 --version`
+Python 3.7.6
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+
 
  
 
