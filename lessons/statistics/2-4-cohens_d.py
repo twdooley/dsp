@@ -1,10 +1,14 @@
 
 def WeightDiff(live, firsts, others):
+    """Get means"""
     mean_live = live.totalwgt_lb.mean()
     mean1 = firsts.totalwgt_lb.mean()
     mean_oth = others.totalwgt_lb.mean()
+    
+    """Get vars"""
     var1 = firsts.totalwgt_lb.var()
     var2 = others.totalwgt_lb.var()
+    
     print('Means')
     print(f'First birth: {mean1}')
     print(f'Others: {mean_oth}\n')
