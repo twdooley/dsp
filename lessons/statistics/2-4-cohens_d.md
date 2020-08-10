@@ -1,5 +1,7 @@
 
 
+
+```
 def WeightDiff(live, firsts, others):
     """Get means"""
     mean_live = live.totalwgt_lb.mean()
@@ -23,3 +25,4 @@ def WeightDiff(live, firsts, others):
     print(f"Cohen's d: {d}")
    
  WeightDiff(live, firsts, others)
+ ```
