@@ -1,4 +1,5 @@
 
+
 def WeightDiff(live, firsts, others):
     """Get means"""
     mean_live = live.totalwgt_lb.mean()
