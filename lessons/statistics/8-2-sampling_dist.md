@@ -7,7 +7,7 @@ def Simulator(n=10, lam=2, iters=1000):
     """
     n: sample size
     lam: param of exponential distr
-    iters=simiulation runs"""
+    iters=simulation runs"""
     
     estimates=[]
     for _ in range(iters):
@@ -44,6 +44,6 @@ def Simulator(n=10, lam=2, iters=1000):
 Simulator()
 ```
 
-![sampling distribution] (dsp/img/sampling_dist.png)
+![sampling distribution] (./img/sampling_dist.png)
 
 
