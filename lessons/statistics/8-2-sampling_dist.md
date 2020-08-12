@@ -45,6 +45,6 @@ Simulator()
 ```
 
 
-![](img/sampling_dist.png)
+![sampling distribution](img/sampling_dist.png)
 
 
