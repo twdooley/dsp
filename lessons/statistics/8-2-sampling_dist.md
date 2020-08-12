@@ -44,6 +44,7 @@ def Simulator(n=10, lam=2, iters=1000):
 Simulator()
 ```
 
-![sampling distribution] (./img/sampling_dist.png)
+
+![](img/sampling_dist.png)
 
 
