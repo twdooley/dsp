@@ -86,7 +86,31 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+#### Solution
+*Using a DataFrame* set the hypos as index, columns for priors, likelihoods, and unnormalized multiplication of priors and likelihoods. Find the evidence by summing the unnormalized column, divide unnormalized by evidence to get posteriors. Print the results. There is a 50/50 chance that Elvis was either a fraternal twin or an identical twin. 
+
+```python
+import pandas as pd
+
+elvis = pd.DataFrame(index=['fraternal', 'identical'])
+elvis['priors']= 2/3, 1/3
+elvis['likelihoods'] = 0.5, 1
+elvis['prior x like'] = elvis['priors']*elvis['likelihoods']
+elvis['evidence'] = elvis['prior x like'].sum()
+elvis['posteriors'] = elvis['prior x like'] / elvis['evidence']
+elvis
+
+print(f'Elvis had a {elvis.posteriors[0]*100}% chance of being a fraternal twin, and a {elvis.posteriors[1]*100}% chance of being identical.')
+```
+	
+|           | priors   | likelihoods | prior x like | evidence | posteriors |
+|-----------|----------|-------------|--------------|----------|------------|
+| fraternal | 0.666667 | 0.5         | 0.333333     | 0.666667 | 0.5        |
+| identical | 0.333333 | 1.0         | 0.333333     | 0.666667 | 0.5        |
+
+```
+ >>Elvis had a 50.0% chance of being a fraternal twin, and a 50.0% chance of being identical.
+```
 
 ---
 
